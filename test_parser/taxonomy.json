@@ -1,0 +1,19 @@
+[
+    {
+        "categoryName":"테스트",
+     	"categoryId":"j5_2",
+        "queries":["<BooleanQuery><Clause occurs='should'><BooleanQuery fieldName='Parser1'><Clause occurs='should'><TermQuery>멘토</TermQuery></Clause><Clause occurs='should'><TermQuery>맨토</TermQuery></Clause></BooleanQuery></Clause></BooleanQuery>"],
+        "children":null
+    },
+    {
+        "categoryName":"자문",
+        "categoryId":"j12_1",
+        "queries":["<BooleanQuery><Clause occurs='should'><BooleanQuery fieldName='Parser1'><Clause occurs='should'><ConceptQuery>j2_6</ConceptQuery></Clause><Clause occurs='should'><ConceptQuery>j2_5</ConceptQuery></Clause></BooleanQuery></Clause></BooleanQuery>"],
+         "children":[{
+             "categoryName":"식비",
+     		"categoryId":"j12_2",
+        	"queries":["<BooleanQuery><Clause occurs='should'><BooleanQuery fieldName='Parser1'><Clause occurs='should'><SpanNear inOrder='true' slop='3'><SpanTerm>비용</SpanTerm><SpanTerm>식비</SpanTerm></SpanNear></Clause></BooleanQuery></Clause></BooleanQuery>"],
+        	"children":null
+        }]
+    }
+]
